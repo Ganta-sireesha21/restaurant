@@ -36,7 +36,7 @@ const RestaurantDetailsPage = () => {
     }
 
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:4000/api'}/reservations`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL || '/api'}/reservations`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
